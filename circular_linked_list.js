@@ -41,17 +41,8 @@ CircularLinkedList.prototype.deleteFirstNode = function() {
 		cll = cll.next;
 	}
 
-	// cll = this.head;
-	// console.log(cll)
-	// this.head = this.head.next
 	cll.next = this.head.next;
 	this.head = this.head.next;
-
-	
-
-	
-
-	delete cll
 
 }
 
