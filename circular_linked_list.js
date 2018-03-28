@@ -31,6 +31,30 @@ CircularLinkedList.prototype.addNode = function(data) {
 
 }
 
+CircularLinkedList.prototype.deleteFirstNode = function() {
+
+	// console.log(this.head.next)
+	var cll = this.head;
+
+
+	while(cll.next != this.head) {
+		cll = cll.next;
+	}
+
+	// cll = this.head;
+	// console.log(cll)
+	// this.head = this.head.next
+	cll.next = this.head.next;
+	this.head = this.head.next;
+
+	
+
+	
+
+	delete cll
+
+}
+
 
 var cll = new CircularLinkedList();
 
@@ -44,5 +68,6 @@ cll.addNode(7);
 cll.addNode(8);
 cll.addNode(9);
 cll.addNode(10);
+cll.deleteFirstNode();
 
 console.log(cll);
