@@ -39,4 +39,4 @@ dll.addNode("4");
 dll.addNode("5");
 
 
-console.log(dll)
+console.log(dll);
