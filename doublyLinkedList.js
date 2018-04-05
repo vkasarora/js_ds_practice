@@ -26,9 +26,16 @@ DoublyLinkedList.prototype.addNode = function(data) {
 	}
 
 	currentNode.next = node;
-	node.previous = currentNode
+	node.previous = currentNode;
+
+	this._length++;
 
 	return node;
+}
+
+DoublyLinkedList.prototype.deleteFirstNode = function() {
+	this.head = this.head.next;
+	this.head.previous = null
 }
 
 var dll = new DoublyLinkedList();
@@ -38,5 +45,8 @@ dll.addNode("3");
 dll.addNode("4");
 dll.addNode("5");
 
+console.log(dll);
+
+dll.deleteFirstNode()
 
 console.log(dll);
