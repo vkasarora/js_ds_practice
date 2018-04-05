@@ -28,14 +28,14 @@ DoublyLinkedList.prototype.addNode = function(data) {
 	currentNode.next = node;
 	node.previous = currentNode
 
-	console.log(node)
-
 	return node;
 }
 
 var dll = new DoublyLinkedList();
-dll.addNode("Rajesh");
-dll.addNode("Rao");
-dll.addNode("Raj");
+dll.addNode("1");
+dll.addNode("2");
+dll.addNode("3");
+dll.addNode("4");
+dll.addNode("5");
 
 console.log(JSON.stringify(dll, null, 4))
