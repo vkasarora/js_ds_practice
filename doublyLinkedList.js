@@ -38,4 +38,5 @@ dll.addNode("3");
 dll.addNode("4");
 dll.addNode("5");
 
-console.log(JSON.stringify(dll, null, 4))
+
+console.log(dll)
